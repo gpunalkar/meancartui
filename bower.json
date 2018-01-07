@@ -1,0 +1,34 @@
+{
+  "name": "stressmanagement",
+  "description": "Stress Management App",
+  "main": "server.js",
+  "authors": [
+    "Ganesh Punalkar"
+  ],
+  "license": "ISC",
+  "keywords": [
+    "ui",
+    "router",
+    "cookies"
+  ],
+  "homepage": "https://github.com/gpunalkar/stress-management",
+  "private": true,
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "angular": "^1.6.4",
+    "angular-material": "^1.1.4",
+    "angular-cookies": "^1.6.4",
+    "angular-animate": "^1.6.4",
+    "angular-aria": "^1.6.4",
+    "angular-messages": "^1.6.4",
+    "angular-ui-router": "^1.0.3",
+    "crypto-js": "^3.1.9",
+    "angular-awesome-slider": "2.4.4"
+  }
+}

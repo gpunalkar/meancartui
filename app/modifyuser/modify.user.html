@@ -1,0 +1,26 @@
+<md-content layout="row" layout-align="space-around" layout-padding="layout-padding" ng-cloak="ng-cloak" class="modify-user-form">
+  <md-card flex="flex" flex-gt-sm="50" flex-gt-md="50">
+    <md-toolbar>
+      <div class="md-toolbar-tools">
+        <h2><span>Modify User</span></h2>
+      </div>
+    </md-toolbar>
+    <md-card-content>
+      <form class="form" name="modifyUserForm" novalidate ng-submit="modifyUser()">
+        <md-input-container class="md-block">
+          <label>First Name</label>
+          <input type="text" name="fname" ng-model="fname" placeholder="First Name" required="" />
+        </md-input-container>
+        <md-input-container class="md-block">
+          <label>Last Name</label>
+          <input type="text" name="lname" ng-model="lname" placeholder="Last Name" required="" />
+        </md-input-container>
+        <md-input-container class="md-block">
+          <label>Email</label>
+          <input type="text" name="email" ng-model="email" placeholder="Your Email" required="" />
+        </md-input-container>
+        <md-button type="submit" ng-disabled="!modifyUserForm.$valid" class="md-raised md-primary">&nbsp; Modify User &nbsp;</md-button>
+      </form>
+    </md-card-content>
+  </md-card>
+</md-content>

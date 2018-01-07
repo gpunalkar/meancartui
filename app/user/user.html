@@ -1,0 +1,49 @@
+<md-content layout="row" layout-align="space-around" layout-padding="layout-padding" ng-cloak="ng-cloak" class="forgot-password-form">
+  <md-card flex="flex" flex-gt-sm="75" flex-gt-md="75">
+    <md-toolbar>
+      <div class="md-toolbar-tools">
+        <h2><span>Manage Users</span></h2>
+      </div>
+    </md-toolbar>
+    <div layout="row">
+      <div flex="30">
+        <md-input-container md-no-float>
+          <input type="text" name="userSearch" ng-model="userSearch.first_name" placeholder="Search" />
+        </md-input-container>
+      </div>
+      <div flex="70" layout-align="end">
+        <md-button ui-sref="adduser" class="md-raised md-accent">Add User</md-button>
+        <md-button class="md-raised md-accent" ng-click="printDoc()">Print</md-button>
+        <md-button class="md-raised md-accent" ng-click="downloadPDFDoc()">PDF</md-button>
+      </div>
+    </div>
+    <md-table-container>
+      <table md-table>
+        <thead md-head>
+          <tr md-row>
+            <th md-column>First Name</th>
+            <th md-column>Last Name</th>
+            <th md-column>Email</th>
+            <th md-column>Is Active</th>
+            <th md-column center>Actions</th>
+          </tr>
+        </thead>
+        <!--filter (array) : userSearch (search string): true (comparative / case sensitive /exact match): key (by object key) -->
+        <tr class="md-table-content-row" ng-repeat="user in users | filter : userSearch" ng-include="getTemplate(user)">
+        </tr>
+        </tbody>
+      </table>
+    </md-table-container>
+  </md-card>
+</md-content>
+
+<script id="userdetails" type="text/ng-template">
+  <td md-cell>{{user.first_name}}</td>
+  <td md-cell>{{user.last_name}}</td>
+  <td md-cell>{{user.email_id}}</td>
+  <td md-cell>{{user.isactive}}</td>
+  <td md-cell>
+    <md-button md-no-ink class="md-primary" ng-click="modifyUser(user)">Modify</md-button> |
+    <md-button md-no-ink class="md-primary" ng-click="deleteUser(user._id)">Delete</md-button>
+  </td>
+</script>

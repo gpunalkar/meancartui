@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<!--[if IE 8]> <html lang="en" class="ie8 no-js"> <![endif]-->
+<!--[if IE 9]> <html lang="en" class="ie9 no-js"> <![endif]-->
+<!--[if !IE]><!-->
+<html lang="en">
+<!--<![endif]-->
+<!-- BEGIN HEAD -->
+
+<head>
+  <meta charset="utf-8" />
+  <title>Stress Management - Training</title>
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta content="" name="description" />
+  <meta content="" name="author" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+
+  <!-- Vendors -->
+  <script src="bower_components/angular/angular.min.js"></script>
+  <script src="bower_components/angular-cookies/angular-cookies.min.js"></script>
+  <script src="bower_components/angular-ui-router/release/angular-ui-router.min.js"></script>
+  <script src="bower_components/angular-aria/angular-aria.js"></script>
+  <script src="bower_components/angular-animate/angular-animate.js"></script>
+  <script src="bower_components/angular-material/angular-material.min.js"></script>
+  <script src="bower_components/crypto-js/crypto-js.js"></script>
+  <script type="text/javascript" src="bower_components/angular-material-data-table/dist/md-data-table.min.js"></script>
+  <script src="bower_components/pdfmake/build/pdfmake.min.js"></script>
+  <script src="bower_components/pdfmake/build/vfs_fonts.js"></script>
+
+  <!-- Vendors End -->
+
+  <!-- Custom -->
+  <script src="./app/app.js"></script>
+  <script src="./app/envConfig.js"></script>
+  <script src="./utils/constant.js"></script>
+  <script src="./utils/service.manager.js"></script>
+  <script src="./utils/print.service.js"></script>
+  <script src="./utils/pdf.service.js"></script>
+
+  <!-- Login Page -->
+  <script src="./app/login/login.controller.js"></script>
+  <script src="./app/login/login.service.js"></script>
+
+  <!-- Home Page -->
+  <script src="./app/home/home.controller.js"></script>
+  <script src="./app/home/home.service.js"></script>
+
+  <!-- Change Password Page -->
+  <script src="./app/changepassword/change.password.controller.js"></script>
+  <script src="./app/changepassword/change.password.service.js"></script>
+
+  <!-- Forgot Password Page -->
+  <script src="./app/forgotpassword/forgot.password.controller.js"></script>
+  <script src="./app/forgotpassword/forgot.password.service.js"></script>
+
+  <!-- Reset Password Page -->
+  <script src="./app/resetpassword/reset.password.controller.js"></script>
+  <script src="./app/resetpassword/reset.password.service.js"></script>
+
+  <!-- User Page -->
+  <script src="./app/user/user.controller.js"></script>
+  <script src="./app/user/user.service.js"></script>
+
+  <!-- Add User -->
+  <script src="./app/adduser/add.user.controller.js"></script>
+  <script src="./app/adduser/add.user.service.js"></script>
+
+  <!-- Modify User -->
+  <script src="./app/modifyuser/modify.user.controller.js"></script>
+  <script src="./app/modifyuser/modify.user.service.js"></script>
+
+  <!-- End Custom -->
+
+  <!-- Vendors CSS -->
+  <link rel="stylesheet" type="text/css" href="../../bower_components/angular-material/angular-material.min.css" />
+  <link href="bower_components/angular-material-data-table/dist/md-data-table.min.css" rel="stylesheet" type="text/css" />
+
+</head>
+<!-- END HEAD -->
+<!-- BEGIN BODY -->
+
+<body layout="row" ng-app="StressRootModule" md-theme="altTheme">
+  <div layout="column" class="relative" layout-fill role="main">
+    <md-toolbar>
+      <div class="md-toolbar-tools">
+        <h3>
+          Stress Management
+        </h3>
+        <span flex></span>
+        <md-button aria-label="Search">
+          <ng-md-icon icon="search"></ng-md-icon>
+        </md-button>
+      </div>
+    </md-toolbar>
+    <md-content>
+      <ui-view></ui-view>
+    </md-content>
+</body>
+<!-- END BODY -->
+
+</html>
+<!--
+
+Is a centralized location which handles services
+example: 404 
+
+use to intercept the http response or request
+
+Separate error handler file and inject in service manager
+whenever 404, 400 page, call the function in service manager -->
