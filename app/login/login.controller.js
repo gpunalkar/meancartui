@@ -21,6 +21,7 @@
         $scope.validateCrendentials = function () {
             LoginService.validateUser($scope.email, $scope.password, $scope.isadmin).then(function (resp) {
                 //Set Cookie
+                console.log(resp);
                 var userAuthorization = {
                     userId: resp.data.response.data._id,
                     firstName: resp.data.response.data.first_name,

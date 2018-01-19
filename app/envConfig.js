@@ -11,7 +11,7 @@
 
     // Project Constants
     var envConfigObject = {
-        BASE_PATH: 'http://localhost:8001',
+        BASE_PATH: 'http://localhost:8000',
     }
     EnvConfigModule.constant('__ENV',envConfigObject)
 })();

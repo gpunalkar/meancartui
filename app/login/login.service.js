@@ -31,7 +31,8 @@
         //Validate User against database
         this.validateUser = function (email, pwd, admin) {
             return $q(function (resolve, reject) {
-                var encryptedPassword = CryptoJS.AES.encrypt(pwd, CONSTANT.SECRET).toString();
+                // var encryptedPassword = CryptoJS.AES.encrypt(pwd, CONSTANT.SECRET).toString();
+                var encryptedPassword = pwd;
                 var dataObject = {
                     "email_id": email,
                     "password": encryptedPassword,

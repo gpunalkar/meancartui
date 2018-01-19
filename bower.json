@@ -1,6 +1,6 @@
 {
-  "name": "stressmanagement",
-  "description": "Stress Management App",
+  "name": "meancartui",
+  "description": "Mean Cart UI",
   "main": "server.js",
   "authors": [
     "Ganesh Punalkar"
@@ -11,7 +11,7 @@
     "router",
     "cookies"
   ],
-  "homepage": "https://github.com/gpunalkar/stress-management",
+  "homepage": "https://github.com/gpunalkar/meancartui",
   "private": true,
   "ignore": [
     "**/.*",
