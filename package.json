@@ -1,0 +1,25 @@
+{
+  "name": "meancartui",
+  "version": "1.0.0",
+  "description": "Mean Cart UI",
+  "main": "index.js",
+  "scripts": {
+    "test": "meancartui"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/gpunalkar/meancartui.git"
+  },
+  "keywords": [
+    "mongdb",
+    "express",
+    "angular",
+    "node"
+  ],
+  "author": "Ganesh Punalkar <ganesh.punalkar@atos.net>",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/gpunalkar/meancartui/issues"
+  },
+  "homepage": "https://github.com/gpunalkar/meancartui#readme"
+}
